@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FleetCrew : L'Intelligence Opérationnelle pour le Transport Lourd</title>
-    <link rel="icon" href="./fleetcrew_new_logo.png" type="image/png">
+    <link rel="icon" href="https://raw.githubusercontent.com/martianbandit/FleetCrew-Agentics/refs/heads/main/IMG_5279.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -309,6 +309,7 @@
             .section-title { @apply text-2xl sm:text-3xl; }
             h1.text-4xl { @apply text-3xl; }
             .testimonial-card { padding: 1.5rem; }
+            .slide-container { padding: 1rem; }
         }
         
         @media (prefers-reduced-motion: reduce) {
@@ -690,6 +691,41 @@
                 opacity: 0.7;
             }
         }
+        
+        /* Slide section */
+        .slide-section {
+            position: relative;
+            padding: 5rem 0;
+            background: linear-gradient(135deg, rgba(10, 15, 28, 0.9), rgba(26, 31, 46, 0.9));
+        }
+        
+        .slide-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(26, 31, 46, 0.95);
+            border-radius: 24px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        
+        .slide-iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .slide-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(139, 92, 246, 0.1));
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
@@ -703,7 +739,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <a href="#" class="logo-container">
-                    <img src="./fleetcrew_new_logo.png" alt="FleetCrew Logo" class="h-10 w-auto">
+                    <img src="https://raw.githubusercontent.com/martianbandit/FleetCrew-Agentics/refs/heads/main/IMG_5279.png" alt="FleetCrew Logo" class="h-10 w-auto">
                     <h1 class="text-2xl font-bold tracking-tight orbitron text-white">FleetCrew</h1>
                 </a>
                 
@@ -851,6 +887,21 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Slide Presentation Section -->
+        <section class="slide-section fade-in-element">
+            <div class="slide-overlay"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold sm:text-4xl orbitron text-white">Notre Feuille de Route</h2>
+                    <p class="mt-4 text-lg max-w-2xl mx-auto">Découvrez notre vision stratégique pour l'avenir du transport lourd</p>
+                </div>
+                
+                <div class="slide-container module-glow">
+                    <iframe class="slide-iframe" src="https://www.genspark.ai/slides?project_id=c7e4bca0-6d7f-4124-8f07-bf3c4563d5d2"></iframe>
+                </div>
+            </div>
+        </section>
 
         <!-- Ecosystem Section -->
         <section id="ecosystem" class="bg-secondary-dark/20">
@@ -989,25 +1040,33 @@
                 </div>
                 <div class="mt-16 grid lg:grid-cols-4 gap-8">
                     <div class="team-card module-glow fade-in-element">
-                        <div class="team-avatar"><img src="./jean_dupont_avatar.png" alt="José Paradis Gravel" class="rounded-full w-full h-full object-cover"></div>
+                        <div class="team-avatar">
+                            <img src="https://raw.githubusercontent.com/martianbandit/FleetCrew-Agentics/refs/heads/main/IMG_4378.png" alt="José Paradis Gravel" class="rounded-full w-full h-full object-cover">
+                        </div>
                         <h3 class="text-xl font-bold text-white mb-2">José Paradis Gravel</h3>
                         <p class="text-blue-400 mb-4">PDG & Expert Mécanicien</p>
                         <p class="text-sm">20 ans d'expérience dans l'industrie du transport lourd et la maintenance préventive. Architecte IA.</p>
                     </div>
                     <div class="team-card module-glow fade-in-element delay-1">
-                        <div class="team-avatar"><img src="./persona1.jpeg" alt="Marc Dubois" class="rounded-full w-full h-full object-cover"></div>
+                        <div class="team-avatar">
+                            <img src="https://raw.githubusercontent.com/martianbandit/FleetCrew-Agentics/refs/heads/main/IMG_5224.jpeg" alt="Marc Dubois" class="rounded-full w-full h-full object-cover">
+                        </div>
                         <h3 class="text-xl font-bold text-white mb-2">Marc Dubois</h3>
                         <p class="text-blue-400 mb-4">Chef d'Atelier, 15 ans d'expérience</p>
                         <p class="text-sm">Représente le gestionnaire d'atelier expérimenté, soucieux de l'efficacité et de la formation de son équipe.</p>
                     </div>
                     <div class="team-card module-glow fade-in-element delay-2">
-                        <div class="team-avatar"><img src="./persona2.jpeg" alt="Léa Martin" class="rounded-full w-full h-full object-cover"></div>
+                        <div class="team-avatar">
+                            <img src="https://raw.githubusercontent.com/martianbandit/FleetCrew-Agentics/refs/heads/main/IMG_5276.jpeg" alt="Léa Martin" class="rounded-full w-full h-full object-cover">
+                        </div>
                         <h3 class="text-xl font-bold text-white mb-2">Léa Martin</h3>
                         <p class="text-blue-400 mb-4">Responsable Conformité & Flotte</p>
                         <p class="text-sm">Incarne les défis liés à la conformité réglementaire et à l'optimisation des coûts de la flotte.</p>
                     </div>
                     <div class="team-card module-glow fade-in-element delay-3">
-                        <div class="team-avatar"><img src="./persona_ml_data_scientist.png" alt="Sophie Durand" class="rounded-full w-full h-full object-cover"></div>
+                        <div class="team-avatar">
+                            <img src="https://raw.githubusercontent.com/martianbandit/FleetCrew-Agentics/refs/heads/main/IMG_5230.jpeg" alt="Sophie Durand" class="rounded-full w-full h-full object-cover">
+                        </div>
                         <h3 class="text-xl font-bold text-white mb-2">Sophie Durand</h3>
                         <p class="text-blue-400 mb-4">Spécialiste ML & Data-scientist</p>
                         <p class="text-sm">Experte en modélisation prédictive et analyse de données massives pour optimiser les performances de la flotte.</p>
@@ -1520,7 +1579,7 @@
             event.target.classList.add('selected');
             
             // Show time slots
-            document.getElementById('time-slots').classList.remove('hidden');
+            document.getElementById('time-slots').classlassList.remove('hidden');
             
             // Reset time slot selection
             document.querySelectorAll('.time-slot').forEach(slot => {
